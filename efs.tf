@@ -24,13 +24,13 @@ module "efs" {
     }
     "sonarqube_extension" = {
       posix_user = {
-        gid            = "1001"
-        uid            = "5000"
+        gid            = "5000"
+        uid            = "1001"
         secondary_gids = "1002,1003"
       }
       creation_info = {
-        gid         = "1001"
-        uid         = "5000"
+        gid         = "5000"
+        uid         = "1001"
         permissions = "0755"
       }
     }

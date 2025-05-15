@@ -8,6 +8,10 @@ All notable changes to this module will be documented in this file.
 
 - var: sonarqube_version
 
+### fixed
+
+- sonarqube_extension access_points permission
+
 ## [1.0.0] - 2025-04-23
 
 ### Added
