@@ -12,9 +12,9 @@ useradd -u 1001 -g 5000 -m sonar
 
 # Download and install SonarQube
 cd /opt
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.2.1.78527.zip
-unzip sonarqube-10.2.1.78527.zip
-mv sonarqube-10.2.1.78527 sonarqube
+wget "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-${SONARQUBE_VERSION}.zip"
+unzip "sonarqube-${SONARQUBE_VERSION}.zip"
+mv "sonarqube-${SONARQUBE_VERSION}" sonarqube
 chown -R sonar:sonar /opt/sonarqube
 
 # Mount data

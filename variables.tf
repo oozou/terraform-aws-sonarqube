@@ -272,3 +272,8 @@ variable "rds_parameters" {
   }))
   default = []
 }
+
+variable "sonarqube_version" {
+  description = "The version of SonarQube to deploy"
+  type        = string
+}

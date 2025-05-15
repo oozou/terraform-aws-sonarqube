@@ -40,7 +40,7 @@ resource "aws_security_group_rule" "ingress" {
 resource "aws_security_group" "alb_sg" {
   name_prefix = format("%s-alb-sg", local.name)
   description = "Allow HTTPS inbound traffic"
-  vpc_id      = var.vpc_id  # Replace with your VPC ID
+  vpc_id      = var.vpc_id # Replace with your VPC ID
 
   ingress {
     description = "Allow HTTPS from anywhere"

@@ -35,8 +35,8 @@ resource "aws_lb_listener" "public" {
   load_balancer_arn = aws_lb.public.arn
   port              = "443"
   protocol          = "HTTPS"
-  certificate_arn = var.alb_certificate_arn
-  ssl_policy      = var.alb_ssl_policy
+  certificate_arn   = var.alb_certificate_arn
+  ssl_policy        = var.alb_ssl_policy
 
 
   default_action {

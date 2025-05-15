@@ -4,12 +4,12 @@ module "sonarqube" {
   prefix      = "test"
   environment = "dev"
 
-  vpc_id             = "vpc-xxxx"
-  public_subnet_ids  = ["subnet-xxx", "subnet-xxx"]
-  private_subnet_ids = ["subnet-xxx","subnet-xxx"]
-  database_subnet_ids = ["subnet-xxx", "subnet-xxx"]
+  vpc_id             = "vpc-0d4a8318e598f784b"
+  public_subnet_ids  = ["subnet-00d57ebe1db48585b", "subnet-062e5cadad73d060d"]
+  private_subnet_ids = ["subnet-0c3051ba16598f822","subnet-0a1136b6f7b46a145"]
+  database_subnet_ids = ["subnet-05899160466780f4f", "subnet-0063d593da3e26b5d"]
 
-  instance_type           = "t3a.medium"
+  instance_type           = "t3a.small"
   public_lb_domain    = "sonarqube"
   is_enabled_https_public = true
 
@@ -36,7 +36,7 @@ module "sonarqube" {
     password = "test123xxx"
   }
 
-  alb_certificate_arn = "xxxxx"
+  alb_certificate_arn = "arn:aws:acm:ap-southeast-1:855546030651:certificate/ee136da9-44c6-467a-8c5c-698e04ef7b1b"
 
   tags = var.tags
 }
